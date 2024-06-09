@@ -10,7 +10,7 @@ import Foundation
 struct Photo: Decodable {
     let id: Int
     let sol: Int
-    let camera: Camera
+    let camera: PhotoCamera
     let img_src: String
     let earth_date: String
     let rover: Rover
@@ -18,4 +18,11 @@ struct Photo: Decodable {
 
 struct PhotoResponse: Decodable {
     let latest_photos: [Photo]
+}
+
+struct PhotoCamera: Decodable {
+    let id: Int
+    let name: String
+    let rover_id: Int
+    let full_name: String
 }
