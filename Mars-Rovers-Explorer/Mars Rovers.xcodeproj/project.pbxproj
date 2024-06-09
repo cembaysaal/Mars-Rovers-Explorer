@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3A86C32C15FE2900D9AFA1 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A86C22C15FE2900D9AFA1 /* UIImageView+Extensions.swift */; };
 		DAE6CB1D2C15B8C4007734AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB1C2C15B8C4007734AD /* AppDelegate.swift */; };
 		DAE6CB1F2C15B8C4007734AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB1E2C15B8C4007734AD /* SceneDelegate.swift */; };
-		DAE6CB212C15B8C4007734AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB202C15B8C4007734AD /* ViewController.swift */; };
 		DAE6CB242C15B8C4007734AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB222C15B8C4007734AD /* Main.storyboard */; };
 		DAE6CB262C15B8C5007734AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB252C15B8C5007734AD /* Assets.xcassets */; };
 		DAE6CB292C15B8C5007734AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB272C15B8C5007734AD /* LaunchScreen.storyboard */; };
@@ -25,7 +25,7 @@
 		DAE6CB4C2C15BCF3007734AD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB4B2C15BCF3007734AD /* PhotoCollectionViewCell.swift */; };
 		DAE6CB4E2C15BD0B007734AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB4D2C15BD0B007734AD /* NetworkManager.swift */; };
 		DAE6CB502C15DE47007734AD /* RoverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB4F2C15DE47007734AD /* RoverResponse.swift */; };
-		DAE6CB552C15E035007734AD /* cruiosity.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB512C15E035007734AD /* cruiosity.png */; };
+		DAE6CB552C15E035007734AD /* curiosity.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB512C15E035007734AD /* curiosity.png */; };
 		DAE6CB562C15E035007734AD /* opportunity.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB522C15E035007734AD /* opportunity.png */; };
 		DAE6CB572C15E035007734AD /* perseverance.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB532C15E035007734AD /* perseverance.png */; };
 		DAE6CB582C15E035007734AD /* spirit.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB542C15E035007734AD /* spirit.png */; };
@@ -33,10 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3A86C22C15FE2900D9AFA1 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		DAE6CB192C15B8C4007734AD /* Mars Rovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mars Rovers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE6CB1C2C15B8C4007734AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE6CB1E2C15B8C4007734AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAE6CB202C15B8C4007734AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAE6CB232C15B8C4007734AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAE6CB252C15B8C5007734AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE6CB282C15B8C5007734AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		DAE6CB4B2C15BCF3007734AD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		DAE6CB4D2C15BD0B007734AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DAE6CB4F2C15DE47007734AD /* RoverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverResponse.swift; sourceTree = "<group>"; };
-		DAE6CB512C15E035007734AD /* cruiosity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cruiosity.png; sourceTree = "<group>"; };
+		DAE6CB512C15E035007734AD /* curiosity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curiosity.png; sourceTree = "<group>"; };
 		DAE6CB522C15E035007734AD /* opportunity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opportunity.png; sourceTree = "<group>"; };
 		DAE6CB532C15E035007734AD /* perseverance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perseverance.png; sourceTree = "<group>"; };
 		DAE6CB542C15E035007734AD /* spirit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spirit.png; sourceTree = "<group>"; };
@@ -97,7 +97,6 @@
 				DAE6CB332C15BBE0007734AD /* Views */,
 				DAE6CB322C15BBD8007734AD /* Models */,
 				DAE6CB302C15BBB6007734AD /* App */,
-				DAE6CB202C15B8C4007734AD /* ViewController.swift */,
 				DAE6CB2A2C15B8C5007734AD /* Info.plist */,
 			);
 			path = "Mars-Rovers-Explorer";
@@ -148,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE6CB4D2C15BD0B007734AD /* NetworkManager.swift */,
+				DA3A86C22C15FE2900D9AFA1 /* UIImageView+Extensions.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 		DAE6CB372C15BBFE007734AD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				DAE6CB512C15E035007734AD /* cruiosity.png */,
+				DAE6CB512C15E035007734AD /* curiosity.png */,
 				DAE6CB522C15E035007734AD /* opportunity.png */,
 				DAE6CB532C15E035007734AD /* perseverance.png */,
 				DAE6CB542C15E035007734AD /* spirit.png */,
@@ -239,7 +239,7 @@
 				DAE6CB242C15B8C4007734AD /* Main.storyboard in Resources */,
 				DAE6CB572C15E035007734AD /* perseverance.png in Resources */,
 				DAE6CB582C15E035007734AD /* spirit.png in Resources */,
-				DAE6CB552C15E035007734AD /* cruiosity.png in Resources */,
+				DAE6CB552C15E035007734AD /* curiosity.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +257,13 @@
 				DAE6CB402C15BC6B007734AD /* RoversVM.swift in Sources */,
 				DAE6CB3C2C15BC4A007734AD /* Camera.swift in Sources */,
 				DAE6CB462C15BC91007734AD /* RoverDetailsVC.swift in Sources */,
-				DAE6CB212C15B8C4007734AD /* ViewController.swift in Sources */,
 				DAE6CB442C15BC8B007734AD /* RoversVC.swift in Sources */,
 				DAE6CB4A2C15BCE4007734AD /* PhotoTableViewCell.swift in Sources */,
 				DAE6CB502C15DE47007734AD /* RoverResponse.swift in Sources */,
 				DAE6CB4E2C15BD0B007734AD /* NetworkManager.swift in Sources */,
 				DAE6CB1D2C15B8C4007734AD /* AppDelegate.swift in Sources */,
 				DAE6CB422C15BC70007734AD /* RoverDetailsVM.swift in Sources */,
+				DA3A86C32C15FE2900D9AFA1 /* UIImageView+Extensions.swift in Sources */,
 				DAE6CB1F2C15B8C4007734AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

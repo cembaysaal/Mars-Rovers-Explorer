@@ -1,24 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AXs-YZ-9uD">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Rover DetailsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoverDetailsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RoverDetailsVC" customModule="Mars_Rovers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ag1-gy-xnL">
+                                <rect key="frame" x="16" y="270" width="203" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRa-QM-PKp">
+                                <rect key="frame" x="0.0" y="123" width="393" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="z8d-Jy-11M">
+                                <rect key="frame" x="0.0" y="328" width="393" height="332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoTableViewCell" id="iPJ-9n-EOt" customClass="PhotoTableViewCell" customModule="Mars_Rovers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="140.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iPJ-9n-EOt" id="QBx-7e-Gs6">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="140.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BBi-tI-ie0">
+                                                    <rect key="frame" x="10" y="9.9999999999999929" width="120" height="120.33333333333331"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="NyH-RI-EYu"/>
+                                                        <constraint firstAttribute="height" constant="120" id="qqH-Cu-hjR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSB-tA-25u" userLabel="Rover Name">
+                                                    <rect key="frame" x="140" y="21" width="223" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" systemColor="systemBrownColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aPb-Fn-lal" userLabel="Landing Date">
+                                                    <rect key="frame" x="140" y="39" width="253" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK8-QZ-wmw" userLabel="Status">
+                                                    <rect key="frame" x="140" y="73" width="251" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eSB-tA-25u" firstAttribute="leading" secondItem="BBi-tI-ie0" secondAttribute="trailing" constant="10" id="7Qr-tg-5D2"/>
+                                                <constraint firstItem="BBi-tI-ie0" firstAttribute="leading" secondItem="QBx-7e-Gs6" secondAttribute="leading" constant="10" id="P2f-ce-DLU"/>
+                                                <constraint firstAttribute="bottom" secondItem="BBi-tI-ie0" secondAttribute="bottom" constant="10" id="Uj0-zM-e3z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eSB-tA-25u" secondAttribute="trailing" constant="10" id="V4R-C7-4mU"/>
+                                                <constraint firstItem="eSB-tA-25u" firstAttribute="top" secondItem="QBx-7e-Gs6" secondAttribute="topMargin" constant="10" id="csQ-Jb-iM8"/>
+                                                <constraint firstItem="BBi-tI-ie0" firstAttribute="top" secondItem="QBx-7e-Gs6" secondAttribute="top" constant="10" id="o6h-Xg-B7x"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cameraLabel" destination="aPb-Fn-lal" id="QzM-24-iTr"/>
+                                            <outlet property="dateLabel" destination="nK8-QZ-wmw" id="NNO-9R-6yx"/>
+                                            <outlet property="idLabel" destination="eSB-tA-25u" id="LrS-3E-0Hw"/>
+                                            <outlet property="photoImageView" destination="BBi-tI-ie0" id="Tkr-8Y-jys"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivz-p6-7XT">
+                                <rect key="frame" x="16" y="284" width="377" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Z9X-qD-KOT"/>
+                    <connections>
+                        <outlet property="numberOfCamerasLabel" destination="Ag1-gy-xnL" id="efn-0i-KWd"/>
+                        <outlet property="numberOfPhotosLabel" destination="Ivz-p6-7XT" id="m3K-3c-cgt"/>
+                        <outlet property="roverImageView" destination="MRa-QM-PKp" id="UpW-jw-hNU"/>
+                        <outlet property="tableView" destination="z8d-Jy-11M" id="fDI-fE-Vlc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2.2900763358778624" y="264.78873239436621"/>
+        </scene>
+        <!--RoversVC-->
+        <scene sceneID="PYX-7P-21y">
+            <objects>
+                <tableViewController storyboardIdentifier="RoversVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AXs-YZ-9uD" customClass="RoversVC" customModule="Mars_Rovers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="S8J-V6-TuE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="YBz-Bp-uzm">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoverCell" id="0Sk-ud-8L4" customClass="RoverTableViewCell" customModule="Mars_Rovers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="393" height="140.33332824707031"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Sk-ud-8L4" id="zQv-15-7AZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="140.33332824707031"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YYk-Lk-Jis">
+                                            <rect key="frame" x="10" y="9.9999999999999929" width="120" height="120.33333333333331"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="120" id="DCf-X2-67v"/>
+                                                <constraint firstAttribute="width" constant="120" id="M2X-F3-9HV"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z03-tP-Qgv" userLabel="Rover Name">
+                                            <rect key="frame" x="140" y="21" width="223" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" systemColor="systemBrownColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cb-hJ-deJ" userLabel="Launch Date">
+                                            <rect key="frame" x="278" y="39" width="112" height="59"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hFW-sV-31h" userLabel="Landing Date">
+                                            <rect key="frame" x="140" y="39" width="108" height="59"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cga-Ug-Rs3" userLabel="Status">
+                                            <rect key="frame" x="140" y="100" width="41.333333333333314" height="20.333333333333343"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-Mq-uUm">
+                                            <rect key="frame" x="334" y="110" width="50" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Z03-tP-Qgv" secondAttribute="trailing" constant="10" id="EUl-hJ-vfg"/>
+                                        <constraint firstAttribute="bottom" secondItem="YYk-Lk-Jis" secondAttribute="bottom" constant="10" id="QH1-1U-FHb"/>
+                                        <constraint firstItem="Z03-tP-Qgv" firstAttribute="leading" secondItem="YYk-Lk-Jis" secondAttribute="trailing" constant="10" id="QrS-r7-iaf"/>
+                                        <constraint firstItem="YYk-Lk-Jis" firstAttribute="leading" secondItem="zQv-15-7AZ" secondAttribute="leading" constant="10" id="Wg3-fT-uNi"/>
+                                        <constraint firstItem="YYk-Lk-Jis" firstAttribute="top" secondItem="zQv-15-7AZ" secondAttribute="top" constant="10" id="nQv-D9-Ykc"/>
+                                        <constraint firstItem="Z03-tP-Qgv" firstAttribute="top" secondItem="zQv-15-7AZ" secondAttribute="topMargin" constant="10" id="wD2-D4-Gtd"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="arrowImageView" destination="Q5a-Mq-uUm" id="mcW-qz-nzO"/>
+                                    <outlet property="landingDateLabel" destination="hFW-sV-31h" id="h5L-uj-FxC"/>
+                                    <outlet property="launchDateLabel" destination="8Cb-hJ-deJ" id="7rb-jN-zHK"/>
+                                    <outlet property="nameLabel" destination="Z03-tP-Qgv" id="EcS-x1-KQ7"/>
+                                    <outlet property="roverImageView" destination="YYk-Lk-Jis" id="9FS-xo-fi9"/>
+                                    <outlet property="statusLabel" destination="Cga-Ug-Rs3" id="j3w-pN-ewe"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showRoverDetails" id="nhA-L3-jMo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AXs-YZ-9uD" id="IuV-bs-ZTq"/>
+                            <outlet property="delegate" destination="AXs-YZ-9uD" id="BMb-kK-TIY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iKm-Z7-EbT"/>
+                    <connections>
+                        <outlet property="tableView" destination="S8J-V6-TuE" id="Oza-go-RG2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y13-TH-olZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863.35877862595419" y="-711.26760563380287"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NfA-Ml-eMx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Skn-J6-AeK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RDO-O5-5DT">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AXs-YZ-9uD" kind="relationship" relationship="rootViewController" id="okz-Yi-C5d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncZ-9k-SmN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.358778625954194" y="-711.26760563380287"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

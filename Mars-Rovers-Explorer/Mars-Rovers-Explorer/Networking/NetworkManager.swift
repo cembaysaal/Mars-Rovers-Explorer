@@ -10,37 +10,66 @@ import Foundation
 class NetworkManager {
     static let shared = NetworkManager()
 
-    func fetchRovers(completion: @escaping ([Rover]?) -> Void) {
+    func fetchRovers(completion: @escaping (Result<[Rover], Error>) -> Void) {
         let url = URL(string: "https://mars-photos.herokuapp.com/api/v1/rovers")!
         URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+                return
+            }
             guard let data = data else {
-                completion(nil)
+                DispatchQueue.main.async {
+                    completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "No data received"])))
+                }
                 return
             }
             let decoder = JSONDecoder()
             do {
                 let roverResponse = try decoder.decode(RoverResponse.self, from: data)
-                completion(roverResponse.rovers)
+                DispatchQueue.main.async {
+                    completion(.success(roverResponse.rovers))
+                }
             } catch {
-                completion(nil)
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
         }.resume()
     }
 
-    func fetchLatestPhotos(for roverName: String, completion: @escaping ([Photo]?) -> Void) {
+    func fetchLatestPhotos(for roverName: String, completion: @escaping (Result<[Photo], Error>) -> Void) {
         let urlString = "https://mars-photos.herokuapp.com/api/v1/rovers/\(roverName)/latest_photos"
-        let url = URL(string: urlString)!
+        guard let url = URL(string: urlString) else {
+            DispatchQueue.main.async {
+                completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
+            }
+            return
+        }
         URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+                return
+            }
             guard let data = data else {
-                completion(nil)
+                DispatchQueue.main.async {
+                    completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "No data received"])))
+                }
                 return
             }
             let decoder = JSONDecoder()
             do {
                 let photoResponse = try decoder.decode(PhotoResponse.self, from: data)
-                completion(photoResponse.latest_photos)
+                DispatchQueue.main.async {
+                    completion(.success(photoResponse.latest_photos))
+                }
             } catch {
-                completion(nil)
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
         }.resume()
     }
