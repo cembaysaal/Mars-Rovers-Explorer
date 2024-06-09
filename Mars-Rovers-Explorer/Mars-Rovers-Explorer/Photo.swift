@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct Photo: Decodable {
+    let id: Int
+    let sol: Int
+    let camera: Camera
+    let img_src: String
+    let earth_date: String
+    let rover: Rover
+}
+
+struct PhotoResponse: Decodable {
+    let latest_photos: [Photo]
+}
