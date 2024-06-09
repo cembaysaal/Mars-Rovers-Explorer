@@ -25,6 +25,10 @@
 		DAE6CB4C2C15BCF3007734AD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB4B2C15BCF3007734AD /* PhotoCollectionViewCell.swift */; };
 		DAE6CB4E2C15BD0B007734AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB4D2C15BD0B007734AD /* NetworkManager.swift */; };
 		DAE6CB502C15DE47007734AD /* RoverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CB4F2C15DE47007734AD /* RoverResponse.swift */; };
+		DAE6CB552C15E035007734AD /* cruiosity.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB512C15E035007734AD /* cruiosity.png */; };
+		DAE6CB562C15E035007734AD /* opportunity.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB522C15E035007734AD /* opportunity.png */; };
+		DAE6CB572C15E035007734AD /* perseverance.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB532C15E035007734AD /* perseverance.png */; };
+		DAE6CB582C15E035007734AD /* spirit.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB542C15E035007734AD /* spirit.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		DAE6CB4B2C15BCF3007734AD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		DAE6CB4D2C15BD0B007734AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DAE6CB4F2C15DE47007734AD /* RoverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverResponse.swift; sourceTree = "<group>"; };
+		DAE6CB512C15E035007734AD /* cruiosity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cruiosity.png; sourceTree = "<group>"; };
+		DAE6CB522C15E035007734AD /* opportunity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opportunity.png; sourceTree = "<group>"; };
+		DAE6CB532C15E035007734AD /* perseverance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perseverance.png; sourceTree = "<group>"; };
+		DAE6CB542C15E035007734AD /* spirit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spirit.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,10 @@
 		DAE6CB372C15BBFE007734AD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DAE6CB512C15E035007734AD /* cruiosity.png */,
+				DAE6CB522C15E035007734AD /* opportunity.png */,
+				DAE6CB532C15E035007734AD /* perseverance.png */,
+				DAE6CB542C15E035007734AD /* spirit.png */,
 				DAE6CB252C15B8C5007734AD /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -217,9 +229,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE6CB562C15E035007734AD /* opportunity.png in Resources */,
 				DAE6CB292C15B8C5007734AD /* LaunchScreen.storyboard in Resources */,
 				DAE6CB262C15B8C5007734AD /* Assets.xcassets in Resources */,
 				DAE6CB242C15B8C4007734AD /* Main.storyboard in Resources */,
+				DAE6CB572C15E035007734AD /* perseverance.png in Resources */,
+				DAE6CB582C15E035007734AD /* spirit.png in Resources */,
+				DAE6CB552C15E035007734AD /* cruiosity.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
