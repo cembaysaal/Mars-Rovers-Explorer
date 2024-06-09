@@ -29,10 +29,11 @@
 		DAE6CB562C15E035007734AD /* opportunity.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB522C15E035007734AD /* opportunity.png */; };
 		DAE6CB572C15E035007734AD /* perseverance.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB532C15E035007734AD /* perseverance.png */; };
 		DAE6CB582C15E035007734AD /* spirit.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB542C15E035007734AD /* spirit.png */; };
+		DAE6CB5C2C15E6AF007734AD /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE6CB5B2C15E6AF007734AD /* launch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DAE6CB192C15B8C4007734AD /* Mars-Rovers-Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mars-Rovers-Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE6CB192C15B8C4007734AD /* Mars Rovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mars Rovers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE6CB1C2C15B8C4007734AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE6CB1E2C15B8C4007734AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DAE6CB202C15B8C4007734AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		DAE6CB522C15E035007734AD /* opportunity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opportunity.png; sourceTree = "<group>"; };
 		DAE6CB532C15E035007734AD /* perseverance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perseverance.png; sourceTree = "<group>"; };
 		DAE6CB542C15E035007734AD /* spirit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spirit.png; sourceTree = "<group>"; };
+		DAE6CB5B2C15E6AF007734AD /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 		DAE6CB1A2C15B8C4007734AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAE6CB192C15B8C4007734AD /* Mars-Rovers-Explorer.app */,
+				DAE6CB192C15B8C4007734AD /* Mars Rovers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 				DAE6CB522C15E035007734AD /* opportunity.png */,
 				DAE6CB532C15E035007734AD /* perseverance.png */,
 				DAE6CB542C15E035007734AD /* spirit.png */,
+				DAE6CB5B2C15E6AF007734AD /* launch.png */,
 				DAE6CB252C15B8C5007734AD /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -174,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DAE6CB182C15B8C4007734AD /* Mars-Rovers-Explorer */ = {
+		DAE6CB182C15B8C4007734AD /* Mars Rovers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAE6CB2D2C15B8C5007734AD /* Build configuration list for PBXNativeTarget "Mars-Rovers-Explorer" */;
+			buildConfigurationList = DAE6CB2D2C15B8C5007734AD /* Build configuration list for PBXNativeTarget "Mars Rovers" */;
 			buildPhases = (
 				DAE6CB152C15B8C4007734AD /* Sources */,
 				DAE6CB162C15B8C4007734AD /* Frameworks */,
@@ -186,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = "Mars-Rovers-Explorer";
+			name = "Mars Rovers";
 			productName = "Mars-Rovers-Explorer";
-			productReference = DAE6CB192C15B8C4007734AD /* Mars-Rovers-Explorer.app */;
+			productReference = DAE6CB192C15B8C4007734AD /* Mars Rovers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DAE6CB142C15B8C4007734AD /* Build configuration list for PBXProject "Mars-Rovers-Explorer" */;
+			buildConfigurationList = DAE6CB142C15B8C4007734AD /* Build configuration list for PBXProject "Mars Rovers" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAE6CB182C15B8C4007734AD /* Mars-Rovers-Explorer */,
+				DAE6CB182C15B8C4007734AD /* Mars Rovers */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE6CB5C2C15E6AF007734AD /* launch.png in Resources */,
 				DAE6CB562C15E035007734AD /* opportunity.png in Resources */,
 				DAE6CB292C15B8C5007734AD /* LaunchScreen.storyboard in Resources */,
 				DAE6CB262C15B8C5007734AD /* Assets.xcassets in Resources */,
@@ -462,7 +466,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAE6CB142C15B8C4007734AD /* Build configuration list for PBXProject "Mars-Rovers-Explorer" */ = {
+		DAE6CB142C15B8C4007734AD /* Build configuration list for PBXProject "Mars Rovers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAE6CB2B2C15B8C5007734AD /* Debug */,
@@ -471,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAE6CB2D2C15B8C5007734AD /* Build configuration list for PBXNativeTarget "Mars-Rovers-Explorer" */ = {
+		DAE6CB2D2C15B8C5007734AD /* Build configuration list for PBXNativeTarget "Mars Rovers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAE6CB2E2C15B8C5007734AD /* Debug */,
