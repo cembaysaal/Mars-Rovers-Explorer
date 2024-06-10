@@ -16,7 +16,6 @@ class PhotoTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        // Design adjustments
         photoImageView.layer.cornerRadius = 10
         photoImageView.clipsToBounds = true
     }

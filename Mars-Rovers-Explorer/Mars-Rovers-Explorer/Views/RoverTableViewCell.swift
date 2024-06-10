@@ -27,7 +27,6 @@ class RoverTableViewCell: UITableViewCell {
         arrowImageView.image = UIImage(systemName: "chevron.right")
         arrowImageView.tintColor = .systemGray
         
-        // Design adjustments
         statusLabel.textColor = .white
         statusLabel.layer.cornerRadius = 10
         statusLabel.layer.masksToBounds = true
