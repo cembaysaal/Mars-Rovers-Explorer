@@ -61,6 +61,6 @@ extension RoverDetailsVC: UITableViewDataSource {
 
 extension RoverDetailsVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100 // Adjust as needed
+        return 100 
     }
 }

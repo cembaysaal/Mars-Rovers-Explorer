@@ -17,7 +17,7 @@ class RoversVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 150  // Adjust as needed
+        tableView.estimatedRowHeight = 150
 
         setupTableViewHeader()
         setupBindings()
