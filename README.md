@@ -42,8 +42,6 @@ Contributions are welcome! Follow these steps to contribute:
 
 ## Screenshots 📸
 
-### Home Screen
-![Home Screen]
+![Launch (2)](https://github.com/cembaysaal/Mars-Rovers-Explorer/assets/77170652/64f33ddc-dffe-4509-b5cf-d81af6774ac6)
 
-### Rover Details Screen
-![Rover Details Screen]
+
