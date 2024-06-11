@@ -42,6 +42,7 @@ Contributions are welcome! Follow these steps to contribute:
 
 ## Screenshots 📸
 
-![Launch (2)](https://github.com/cembaysaal/Mars-Rovers-Explorer/assets/77170652/64f33ddc-dffe-4509-b5cf-d81af6774ac6)
+![images)](https://github.com/cembaysaal/Mars-Rovers-Explorer/assets/77170652/2475d295-f3a1-4ad7-946c-3d41c773a349)
+
 
 
