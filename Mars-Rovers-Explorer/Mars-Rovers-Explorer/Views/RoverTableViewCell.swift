@@ -24,8 +24,6 @@ class RoverTableViewCell: UITableViewCell {
         statusLabel.text = rover.status.capitalized
         statusLabel.backgroundColor = rover.status == "active" ? .systemGreen : .systemRed
         roverImageView.image = UIImage(named: rover.name.lowercased())
-        arrowImageView.image = UIImage(systemName: "chevron.right")
-        arrowImageView.tintColor = .systemGray
         
         statusLabel.textColor = .white
         statusLabel.layer.cornerRadius = 10
